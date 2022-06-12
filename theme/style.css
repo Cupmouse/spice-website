@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'M+ c medium';
+    src: url('./fonts/mplus-1c-medium.ttf') format('truetype');
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #eeeeee;
+    font-family: 'M+ c medium';
+}
+
+#container {
+    height: 100%;
+    min-width: 780px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 7px 0 0 0;
+    background-color: white;
+    border-bottom: solid #dddddd 1px;
+}
+
+#headerInner {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#logo {
+    padding: 0 20px 0 30px;
+    font-size: 25px;
+    background: no-repeat url("./logo.png");
+    background-size: 40px;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 4px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 0.5em;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li:hover {
+    border-bottom: solid #dddddd 4px;
+}
+
+nav ul li:active {
+    border-bottom: solid #dddddd 4px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a,
+nav ul li a:visited {
+    color: #dddddd;
+}
+
+nav ul li a:active {
+    color: white;
+}
+
+
+#content {
+    padding: 10px 10%;
+}
+
+#contentInner {
+    padding: 0px 10px;
+}
+
+#content p {
+    font-size: 2em;
+}
+
+.contentCentered {
+    text-align: center;
+}
+
+@keyframes backgroundFromBottom {
+    0% {
+        opacity: 0;
+        background-position-y: 2em;
+    }
+    100% {
+        opacity: 1;
+        background-position-y: 0;
+    }
+}
+
+#bigScreenCap {
+    height: 50%;
+    margin: 5px 0 0 0;
+    padding: 60px 50px;
+    text-align: center;
+    text-shadow: 0 0 10px black;
+    color: white;
+    font-size: 3em;
+    background: 50% 0 no-repeat url("./bigScreenCap.png");
+    background-size: 90%;
+    animation: backgroundFromBottom 1s ease-out;
+}
+
+footer {
+    width: 100%;
+    /*border-top: solid #dddddd 1px;*/
+}
+
+#footerInner {
+    padding: 20px;
+    margin: 0 10%;
+    background-color: #cccccc;
+}
+
+#footerLeft {
+    float: left;
+    width: 60%;
+}
+
+#footerRight {
+    float: right;
+    width: 40%;
+}
+
+#footerCMLogo {
+    width: 100%;
+}
+
+.float-clear {
+    clear: both;
+}
